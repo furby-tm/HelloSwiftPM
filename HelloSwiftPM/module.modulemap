@@ -1,0 +1,4 @@
+module HelloSwiftPM {
+ header "HelloSwiftPM.h"
+ export *
+}

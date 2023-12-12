@@ -1,6 +1,6 @@
-#include "HelloSwiftPM/HelloSwiftPM.h"
+#include "HelloSwiftPM.h"
 
-#include "HelloSwiftPM/SayHello/SayHello.h"
+#include "SayHello/SayHello.h"
 
 #include <stdio.h>
 

@@ -25,6 +25,10 @@ let package = Package(
     .target(
       name: "HelloSwiftPM",
       path: "HelloSwiftPM",
+      exclude: [
+        "SayHello",
+        "SayHelloAgain"
+      ],
       publicHeadersPath: "."
     ),
 

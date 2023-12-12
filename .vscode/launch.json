@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:HelloSwiftPM}",
+      "name": "Debug HelloSwiftPMApp",
+      "program": "${workspaceFolder:HelloSwiftPM}/.build/debug/HelloSwiftPMApp",
+      "preLaunchTask": "swift: Build Debug HelloSwiftPMApp"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:HelloSwiftPM}",
+      "name": "Release HelloSwiftPMApp",
+      "program": "${workspaceFolder:HelloSwiftPM}/.build/release/HelloSwiftPMApp",
+      "preLaunchTask": "swift: Build Release HelloSwiftPMApp"
+    }
+  ]
+}
