@@ -1,4 +1,0 @@
-module SayHello {
- header "SayHello.h"
- export *
-}

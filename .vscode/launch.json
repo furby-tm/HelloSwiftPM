@@ -5,9 +5,9 @@
       "request": "launch",
       "sourceLanguages": ["swift"],
       "args": [],
-      "cwd": "${workspaceFolder:SayHelloSwiftPMExample}",
+      "cwd": "${workspaceFolder:HelloSwiftPM}",
       "name": "Debug HelloSwiftPMApp",
-      "program": "${workspaceFolder:SayHelloSwiftPMExample}/.build/debug/HelloSwiftPMApp",
+      "program": "${workspaceFolder:HelloSwiftPM}/.build/debug/HelloSwiftPMApp",
       "preLaunchTask": "swift: Build Debug HelloSwiftPMApp"
     },
     {
@@ -15,9 +15,9 @@
       "request": "launch",
       "sourceLanguages": ["swift"],
       "args": [],
-      "cwd": "${workspaceFolder:SayHelloSwiftPMExample}",
+      "cwd": "${workspaceFolder:HelloSwiftPM}",
       "name": "Release HelloSwiftPMApp",
-      "program": "${workspaceFolder:SayHelloSwiftPMExample}/.build/release/HelloSwiftPMApp",
+      "program": "${workspaceFolder:HelloSwiftPM}/.build/release/HelloSwiftPMApp",
       "preLaunchTask": "swift: Build Release HelloSwiftPMApp"
     }
   ]

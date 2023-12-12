@@ -1,0 +1,4 @@
+module SayHello {
+ header "../SayHello/SayHello.h"
+ export *
+}

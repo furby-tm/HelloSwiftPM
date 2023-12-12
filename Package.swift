@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "SayHelloSwiftPMExample",
+  name: "HelloSwiftPM",
   products: [
     .library(
       name: "HelloSwiftPM",
@@ -26,8 +26,8 @@ let package = Package(
       name: "HelloSwiftPM",
       path: "HelloSwiftPM",
       exclude: [
-        "HelloSwiftPM/SayHello",
-        "HelloSwiftPM/SayHelloAgain"
+        "SayHello",
+        "SayHelloAgain"
       ],
       publicHeadersPath: "."
     ),
@@ -37,7 +37,15 @@ let package = Package(
       dependencies: [
         .target(name: "HelloSwiftPM")
       ],
-      path: "HelloSwiftPM/HelloSwiftPM/SayHello",
+      path: ".",
+      exclude: [
+        "HelloSwiftPM/SayHelloAgain",
+        "Sources",
+        ".build",
+        ".vscode",
+        ".gitignore",
+        "Package.swift",
+      ],
       publicHeadersPath: "."
     ),
 
@@ -47,7 +55,10 @@ let package = Package(
         .target(name: "HelloSwiftPM"),
         .target(name: "SayHello")
       ],
-      path: "HelloSwiftPM/HelloSwiftPM/SayHelloAgain",
+      path: "HelloSwiftPM",
+      exclude: [
+        "SayHello"
+      ],
       publicHeadersPath: "."
     ),
 

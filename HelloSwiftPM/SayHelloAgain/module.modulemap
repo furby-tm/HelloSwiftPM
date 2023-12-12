@@ -1,0 +1,4 @@
+module SayHelloAgain {
+ header "../SayHelloAgain/SayHelloAgain.h"
+ export *
+}
