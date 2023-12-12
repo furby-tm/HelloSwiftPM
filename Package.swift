@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "HelloSwiftPM",
+  name: "SayHelloSwiftPMExample",
   products: [
     .library(
       name: "HelloSwiftPM",
@@ -30,12 +30,19 @@ let package = Package(
 
     .target(
       name: "SayHello",
+      dependencies: [
+        .target(name: "HelloSwiftPM")
+      ],
       path: "HelloSwiftPM/SayHello",
       publicHeadersPath: "."
     ),
 
     .target(
       name: "SayHelloAgain",
+      dependencies: [
+        .target(name: "HelloSwiftPM"),
+        .target(name: "SayHello")
+      ],
       path: "HelloSwiftPM/SayHelloAgain",
       publicHeadersPath: "."
     ),
