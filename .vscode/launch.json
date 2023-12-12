@@ -3,25 +3,21 @@
     {
       "type": "lldb",
       "request": "launch",
-      "sourceLanguages": [
-        "swift"
-      ],
+      "sourceLanguages": ["swift"],
       "args": [],
-      "cwd": "${workspaceFolder:HelloSwiftPM}",
+      "cwd": "${workspaceFolder:SayHelloSwiftPMExample}",
       "name": "Debug HelloSwiftPMApp",
-      "program": "${workspaceFolder:HelloSwiftPM}/.build/debug/HelloSwiftPMApp",
+      "program": "${workspaceFolder:SayHelloSwiftPMExample}/.build/debug/HelloSwiftPMApp",
       "preLaunchTask": "swift: Build Debug HelloSwiftPMApp"
     },
     {
       "type": "lldb",
       "request": "launch",
-      "sourceLanguages": [
-        "swift"
-      ],
+      "sourceLanguages": ["swift"],
       "args": [],
-      "cwd": "${workspaceFolder:HelloSwiftPM}",
+      "cwd": "${workspaceFolder:SayHelloSwiftPMExample}",
       "name": "Release HelloSwiftPMApp",
-      "program": "${workspaceFolder:HelloSwiftPM}/.build/release/HelloSwiftPMApp",
+      "program": "${workspaceFolder:SayHelloSwiftPMExample}/.build/release/HelloSwiftPMApp",
       "preLaunchTask": "swift: Build Release HelloSwiftPMApp"
     }
   ]

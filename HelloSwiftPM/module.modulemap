@@ -1,4 +1,4 @@
 module HelloSwiftPM {
- header "HelloSwiftPM.h"
+ header "HelloSwiftPM/HelloSwiftPM.h"
  export *
 }

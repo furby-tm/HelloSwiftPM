@@ -26,8 +26,8 @@ let package = Package(
       name: "HelloSwiftPM",
       path: "HelloSwiftPM",
       exclude: [
-        "SayHello",
-        "SayHelloAgain"
+        "HelloSwiftPM/SayHello",
+        "HelloSwiftPM/SayHelloAgain"
       ],
       publicHeadersPath: "."
     ),
@@ -37,7 +37,7 @@ let package = Package(
       dependencies: [
         .target(name: "HelloSwiftPM")
       ],
-      path: "HelloSwiftPM/SayHello",
+      path: "HelloSwiftPM/HelloSwiftPM/SayHello",
       publicHeadersPath: "."
     ),
 
@@ -47,7 +47,7 @@ let package = Package(
         .target(name: "HelloSwiftPM"),
         .target(name: "SayHello")
       ],
-      path: "HelloSwiftPM/SayHelloAgain",
+      path: "HelloSwiftPM/HelloSwiftPM/SayHelloAgain",
       publicHeadersPath: "."
     ),
 
