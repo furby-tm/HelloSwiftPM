@@ -1,11 +1,12 @@
-
-
+import SayHello
+import SayHelloAgain
 
 @main
 struct Creator
 {
   static func main()
   {
-    print("Hello, SwiftPM!")
+    sayHello()
+    sayHelloAgain()
   }
 }

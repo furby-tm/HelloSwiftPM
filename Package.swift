@@ -27,7 +27,7 @@ let package = Package(
       path: "HelloSwiftPM",
       publicHeadersPath: "."
     ),
-    
+
     .target(
       name: "SayHello",
       path: "HelloSwiftPM/SayHello",
@@ -46,7 +46,11 @@ let package = Package(
         "HelloSwiftPM",
         "SayHello",
         "SayHelloAgain"
+      ],
+      swiftSettings: [
+        .interoperabilityMode(.Cxx)
       ]
-    ),
-  ]
+    )
+  ],
+  cxxLanguageStandard: .cxx17
 )
