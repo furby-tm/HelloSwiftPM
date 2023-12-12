@@ -10,6 +10,5 @@ void sayHelloAgain(void)
 {
   const std::string sayHelloAgain = " Again!\n";
 
-  sayHello();
   printf("%s", (HELLO_SWIFT_PM + sayHelloAgain).c_str());
 }
